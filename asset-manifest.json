@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio-build/static/css/main.a2d30bfc.css",
+    "main.js": "/portfolio-build/static/js/main.679897b6.js",
+    "static/js/453.438d9e50.chunk.js": "/portfolio-build/static/js/453.438d9e50.chunk.js",
+    "static/media/athenian.ttf": "/portfolio-build/static/media/athenian.a67d05ad5a9544065f70.ttf",
+    "index.html": "/portfolio-build/index.html",
+    "main.a2d30bfc.css.map": "/portfolio-build/static/css/main.a2d30bfc.css.map",
+    "main.679897b6.js.map": "/portfolio-build/static/js/main.679897b6.js.map",
+    "453.438d9e50.chunk.js.map": "/portfolio-build/static/js/453.438d9e50.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2d30bfc.css",
+    "static/js/main.679897b6.js"
+  ]
+}
