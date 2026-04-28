@@ -1,0 +1,16 @@
+@use '../variables' as *;
+
+h1, h2, h3 {
+  font-family: $heading;
+  margin: 0.8rem 0;
+}
+
+h1 { font-size: 54px; color: $orchid; }
+h2 { font-size: 40px; color: $orchid; }
+h3 { font-size: 28px; color: $spring; }
+
+hr {
+  border: 1px solid $orchid;
+  margin: 2rem 0;
+  opacity: 0.5;
+}

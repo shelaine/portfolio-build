@@ -1,0 +1,35 @@
+@use '../variables' as *;
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  gap: 30px;
+  margin: 50px auto;
+  padding: 0 30px;
+  height: calc(100vh - 100px);
+}
+
+main.portfolio-projects {
+  width: 100%;
+}
+
+.portfolio-inner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+    padding-bottom: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container { flex-direction: column; }
+  aside.sidebar { position: unset; max-width: none; padding-bottom: 50px; max-width: 500px; }
+}
+
+@media screen and (max-width: 800px) {
+  .portfolio-projects .portfolio-inner { grid-template-columns: 1fr; }
+}
+
+  
+  
+

@@ -1,0 +1,89 @@
+@use '../variables' as *;
+
+
+.project-card {
+    background: $grape;
+    border: 2px solid $orchid;
+    border-radius: 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__body {
+        flex: 1;
+        margin-bottom: 0.5rem;
+    }
+
+    h3 {
+        margin-top: 5px;
+    }
+
+    &__tags {
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+        padding-inline-start: 0;
+    }
+
+    &__tag {
+        font-size: .8rem;
+        color: $mauve;
+        padding: 5px 12px;
+        border: 1px solid $mauve;
+        border-radius: 5px;
+    }
+}
+
+.project-card__image-wrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+  img {
+    transition: filter 0.4s ease;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.project-card__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $grape;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.project-card:hover {
+  background: $orchid;
+  color: $wine;
+
+  h3 {
+    color: $wine;
+  }
+  .project-card__image-wrap img {
+     mix-blend-mode:exclusion;
+  }
+  .project-card__overlay {
+    opacity: 0.6;
+  }
+}
+
+.project-card__cta {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}

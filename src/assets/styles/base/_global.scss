@@ -1,0 +1,64 @@
+@use '../variables' as *;
+
+body {
+  background: $grape;
+  color: $spring;
+  font-family: $body;
+  font-weight: 400;
+  font-style: normal;
+  height: 100vh;
+  margin: 0;
+}
+
+a, .btn, button, [role="button"], .project-card {
+  cursor: pointer;
+}
+
+a { text-decoration: none; }
+
+hr {
+    border: 1px solid $orchid;
+    margin: 1.5rem 0;
+    opacity: 0.5;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+
+    &--primary {
+        background: $spring;
+        color: $grape;
+        border-radius: 15rem;
+        text-decoration: none;
+    }
+
+    &--primary:hover {
+        background: $orchid;
+    }
+
+    &--primary-outline {
+        border: 2px solid $spring;
+        color: $spring;
+        border-radius: 15rem;
+        text-decoration: none;
+    }
+
+    &--primary-outline:hover {
+        background: $spring;
+        color: $grape;
+    }
+
+    &--secondary {
+        color: $mauve;
+        text-decoration: underline;
+        text-underline-offset: 8px;
+    }
+
+    &--secondary:hover {
+        color: $orchid;
+    }
+}
